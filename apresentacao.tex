@@ -1,10 +1,10 @@
 \documentclass[subsection=false, compress]{beamer}
 \setbeamertemplate{footline}[frame number] % numerar slides
 \setbeamertemplate{navigation symbols}{} % retirar barra de navegação
-\setbeamertemplate{background}{\tikz[overlay,remember picture]\node[opacity=1]at (current page.center){\includegraphics[width=\paperwidth, height=\paperheight]{Figures/water-mark}};}
+% \setbeamertemplate{background}{\tikz[overlay,remember picture]\node[opacity=1]at (current page.center){\includegraphics[width=\paperwidth, height=\paperheight]{Figures/water-mark}};}
 
 \mode<presentation>
-% \usetheme{Singapore}
+\usetheme{Singapore}
 %\usefonttheme{structurebold}
 %\usebeamercolor[fg]{section in sidebar}
 
@@ -92,7 +92,7 @@
 %\logo{\pgfuseimage{ufpa}}
 
 \hypersetup{
-    pdftitle={Uma Proposta de Controle Alternativo do Mouse Centrado na Cabeça do Usuário}
+    pdftitle={Uso de Redes Neurais Profundas e Recorrentes para Reconhecimento de Fala em Português Brasileiro}
 	pdfauthor={João Victor da Silva Dias Canavarro}
 }
 \fi
@@ -162,7 +162,8 @@
 % \title[Acionador Externo de Baixo Custo Baseado em Sopro]
 \title[Controle Alternativo do Mouse Centrado na Cabeça do Usuário]
 % {\Large Uma Proposta de Acionador Externo de Baixo Custo Baseado em Sopro}
-{\Large Uma Proposta de Controle Alternativo do Mouse Centrado na Cabeça do Usuário}
+% {\Large Uma Proposta de Controle Alternativo do Mouse Centrado na Cabeça do Usuário}
+{\Large Uso de Redes Neurais Profundas e Recorrentes Para Reconhecimento de Fala em Português Brasileiro}
 \author[ João V. Canavarro ]
 {\large \textbf{João Victor da Silva Dias Canavarro}\vspace{.2cm}}
 
@@ -173,12 +174,12 @@ Faculdade de Computação\\[1pt]
 Laboratório de Visualização, Interação e Sistemas Inteligentes\\[1pt]
 % Aluno: João Victor da Silva Dias Canavarro
 Orientador: Prof. Dr. Nelson Cruz Sampaio Neto \\
-% \begin{figure}
-% \includegraphics[width=.13\textwidth]{Figures/logo_ufpa}
-% \end{figure}
-% \vspace{-.35cm}
+\begin{figure}
+\includegraphics[width=.12\textwidth]{Figures/logo_ufpa}
+\end{figure}
+\vspace{-.35cm}
 }
-\date{\small{01 de Outubro de 2019}}
+\date{\small{10 de Outubro de 2020}}
 
 \begin{document}
 % ------------------------------------------------------------------------------
@@ -187,20 +188,20 @@ Orientador: Prof. Dr. Nelson Cruz Sampaio Neto \\
 \end{frame}
 
 % ------------------------------------------------------------------------------
-\begin{frame}{Agenda}
-\begin{enumerate}
-	\item Introdução
-	\bigskip
+% \begin{frame}{Agenda}
+% \begin{enumerate}
+% 	\item Introdução
+% 	\bigskip
 
-	\item Protótipo
-	\bigskip
+% 	\item Protótipo
+% 	\bigskip
 
-	\item Testes e Resultados
-	\bigskip
+% 	\item Testes e Resultados
+% 	\bigskip
 
-	\item Conclusões e Trabalhos Futuros
-\end{enumerate}
-\end{frame}
+% 	\item Conclusões e Trabalhos Futuros
+% \end{enumerate}
+% \end{frame}
 
 % ------------------------------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -210,7 +211,7 @@ Orientador: Prof. Dr. Nelson Cruz Sampaio Neto \\
 \section{Introdução}
 \input{chapters/intro.tex}
 
-\section{Protótipo}
+\section{Metodologia}
 \input{chapters/meth.tex}
 %
 \section{Testes e Resultados}
