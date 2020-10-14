@@ -4,7 +4,7 @@
 \begin{frame}{Reconhecimento de Voz}
 
 \begin{figure}
-	\includegraphics[width=0.5\textwidth]{Figures/asr}
+	\includegraphics[width=0.9\textwidth]{Figures/asr}
     \caption{Esquema tradicional de um sistema autom\'atico de reconhecimento de voz}
 \end{figure}
 
@@ -17,7 +17,25 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Ferramentas Utilizados}
+
+\begin{frame}
+\frametitle{Alinhamento Fon\'etico For\c cado}
+	\begin{itemize}
+		\item Automatiza\c c\~ao  da transcri\c c\~ao e alinhamento de fala gravada
+		\item Estudo e pesquisa de fon\'eticos
+		\item Desenvolvimento de ferramentas mais robustas de reconhecimento e sintese de fala
+	\end{itemize}
+	\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{Figures/align}
+	\end{center}
+	\end{figure}
+
+
+\end{frame}
+
+
+\begin{frame}{Ferramentas}
     \begin{itemize}
         \item Kaldi: um pacote \textit{open-source} de reconhecimento de voz
 			\begin{itemize}
@@ -36,14 +54,18 @@
 \end{frame}
 
 
-\begin{frame}{Objetivos}
+\begin{frame}{Objetivo}
 \begin{itemize}
-    \item Desenvolver um sistema de reconhecimento de voz para PT\_BR utilizando o pacote Kaldi para treinamento dos AMs e LMs
+    % \item Desenvolver um sistema de reconhecimento de voz para PT\_BR utilizando o pacote Kaldi para treinamento dos AMs e LMs
+	\item Desenvolver um alinhador fon\'etico para PT\_BR utilizando o pacote de ferramentas Kaldi
+	\begin{itemize}
+		\item \textit{Plug-in} para o Praat
+		\item Modelos ac\'usticos (AMs) treinados utilizando DNNs e HMM-GMMs
+	\end{itemize}
+	\item Coletar dados para realizar \textit{LM rescoring}: 4-5 milh\~oes de frases
+    \item Disponibilizar recursos \`a comunidade cient\'ifica: grupo Fala Brasil
 \end{itemize}
 
-\begin{itemize}
-    \item Disponibilizar recursos \`a comunidade cient\'ifica
-\end{itemize}
 \begin{figure}
 \begin{center}
 	\includegraphics[width=0.3\textwidth]{Figures/falabrasil}
